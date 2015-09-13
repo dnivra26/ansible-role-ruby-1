@@ -11,4 +11,4 @@
   apt: "name={{ item }} state=present"
   with_items:
     - ruby-full
-    - {{ ruby_rubygems_package_name }}
+    - "{{ ruby_rubygems_package_name }}"
