@@ -44,7 +44,7 @@ None.
 
     - hosts: server
       roles:
-        - { role: jhovanic.ruby }
+        - { role: JhovaniC.ruby }
 
 ## License
 
