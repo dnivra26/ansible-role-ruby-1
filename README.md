@@ -1,5 +1,7 @@
 # Ansible Role: Ruby
 
+[![Build Status](https://travis-ci.org/JhovaniC/ansible-role-ruby.svg?branch=master)](https://travis-ci.org/JhovaniC/ansible-role-ruby)
+
 Installs Ruby and bundler gem on Linux.
 
 ## Requirements
