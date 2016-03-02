@@ -12,6 +12,7 @@
 
 # Install Bundler and configured gems.
 - name: Install Bundler
+  sudo: no
   gem: name=bundler state=present user_install=no
 
 - name: Add bundle symlink
