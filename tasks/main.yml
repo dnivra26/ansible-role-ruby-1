@@ -11,7 +11,7 @@
   when: ruby_install_from_source == true
 
 - name: Fix directory permissions
-  shell: chown -R {{ ansible_ssh_user }} {{ item }}
+  shell: chown -R {{ user }} {{ item }}
   with_items:
       - /usr/local/lib/ruby/gems/2.3.0
       - /usr/local/bin
