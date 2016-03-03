@@ -12,4 +12,4 @@ ruby_version: 2.2.3
 
 ruby_rubygems_package_name: rubygems
 
-user: {{ ansible_ssh_user}}
+user: "{{ ansible_ssh_user}}"
