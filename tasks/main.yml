@@ -20,6 +20,8 @@
 - name: Install Bundler
   sudo: no
   gem: name=bundler state=present user_install=no
+  become: yes
+  become_user: {{ user }}
 
 - name: Add bundle symlink
   file: src=/usr/local/bin/bundle dest=/usr/bin/bundle state=link
