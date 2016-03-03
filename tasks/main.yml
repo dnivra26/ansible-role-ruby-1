@@ -11,7 +11,7 @@
   when: ruby_install_from_source == true
 
 - name: Fix directory permissions
-  shell: chown -R {{ user }} {{ item }}
+  shell: chown -R {{ ansible_ssh_user }} {{ item }}
   with_items:
       - /usr/local/lib/ruby/gems/2.3.0
       - /usr/local/bin
@@ -20,8 +20,6 @@
 - name: Install Bundler
   sudo: no
   gem: name=bundler state=present user_install=no
-  become: yes
-  become_user: "{{ user }}"
 
 - name: Add bundle symlink
   file: src=/usr/local/bin/bundle dest=/usr/bin/bundle state=link
